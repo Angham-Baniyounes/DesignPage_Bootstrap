@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>a simple page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav list-unstyled bg-dark text-capitalize">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        <span class="sidebar-brand-text">Start</span>
+                        <button class="btn btn-primary btn-sm">UI</button>
+                        <button class="btn btn-primary btn-lg">UI</button>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-dashboard"></span>
+                        <span>Dashboard </span>
+                    </a>
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-tint"></span>
+                        <span>Skins </span>
+                    </a>
+                    <span class="glyphicon glyphicon-chevron-right" style="left: 110px;"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-comment"></span>
+                        <span>Messages </span>
+                    </a>
+                    <span class="glyphicon glyphicon-chevron-right" style="left: 80px;"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-send"></span>
+                        <span>Mail </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-file"></span>
+                        <span>Forms </span>
+                    </a>
+                    <span class="glyphicon glyphicon-chevron-right" style="left: 100px;"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-th"></span>
+                        <span>Tables </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-list-alt"></span>
+                        <span>Datatables </span>
+                    </a>
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-th-large"></span>
+                        <span>Components </span>
+                    </a>
+                    <span class="glyphicon glyphicon-chevron-right" style="left: 63px;"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-flash"></span>
+                        <span>Activity </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span>Profile </span>
+                    </a>
+                    <span class="glyphicon glyphicon-chevron-right" style="left: 100px;"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-cd"></span>
+                        <span>Support</span>
+                    </a>
+                    <span class="glyphicon glyphicon-chevron-right" style="left: 90px;"></span>
+                </li>
+                <li>
+                    <a href="#" style="display: inline;">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span>Contacts </span>
+                    </a>
+                    <span class="badge bg-danger" style="left: 82px;">35</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        <span>Calender</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-duplicate"></span>
+                        <span>Pages </span>
+                    </a>
+                    <span class="glyphicon glyphicon-chevron-right" style="left: 100px;"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-tasks"></span>
+                        <span>Tasks </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-comment"></span>
+                        <span>Contact Form </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-paperclip"></span>
+                        <span>File Manager </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-picture"></span>
+                        <span>Gallery </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-briefcase"></span>
+                        <span>Project </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-stats"></span>
+                        <span>Charts </span>
+                    </a>
+                    <span class="glyphicon glyphicon-chevron-right" style="left: 100px;"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        <span>Nested Menu </span>
+                    </a>
+                    <span class="glyphicon glyphicon-chevron-right" style="left: 60px;"></span>
+                </li>
+            </ul>
+        </div>
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-cog"></span>
+                                Marketing automation
+                                <span class="caret"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-share"></span>
+                                Social media
+                                <span class="caret"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-file"></span>
+                                Project
+                                <span class="badge bg-danger">14</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                Form builder
+                                <span class="caret"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-cd"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group input-group">
+                            <input type="text" class="form-control" name="search" placeholder="Search..">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-primary navbar-btn">
+                        Add <span class="caret"></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row" style="margin-left: 0; margin-right: 0;">
+                            <div class="col-lg-3 bg-dark">
+                                <p>
+                                    $1450 <br>
+                                    Week income
+                                    <br><br><br><br>
+                                    <span style="color: #8a6eb6;">120$ </span>Orders <br><br>
+                                    <span style="color: #fdc00c;">15$ </span>Investments<br><br>
+                                    <span style="color: #8dc226;">55$ </span>Others
+                                </p>
+                            </div>
+                            <div class="col-lg-9">
+                                <canvas id="lineChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-6" style="background-color: #f36567;">
+                                <p>
+                                    <h3>26</h3>
+                                    <h5>Open tickets</h5>
+                                    <div class="pull-right">
+                                        <span class="glyphicon glyphicon-triangle-top"></span><br>
+                                        <span>15%</span>
+                                    </div>
+                                </p>
+                            </div>
+                            <div class="col-lg-6" style="background-color: #995eea;">
+                                <p>
+                                    <h3>12</h3>
+                                    <h5>Closes tickets</h5>
+                                    <div class="pull-right">
+                                        <span class="glyphicon glyphicon-triangle-bottom"></span><br>
+                                        <span>11%</span>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6" style="background-color: #fdbf07;">
+                                <p>
+                                    <h3>104</h3>
+                                    <h5>New clients</h5>
+                                    <div class="pull-right">
+                                        <span class="glyphicon glyphicon-triangle-bottom"></span><br>
+                                        <span>5%</span>
+                                    </div>
+                                </p>
+                            </div>
+                            <div class="col-lg-6" style="background-color: #8dc226;">
+                                <p>
+                                    <h3>29</h3>
+                                    <h5>Here is an example of a long name</h5>
+                                    <div class="pull-right">
+                                        <span class="glyphicon glyphicon-triangle-top"></span><br>
+                                        <span>84%</span>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="pull-left" style="font-weight: bold;">Recent orders</div>
+                                <div class="pull-right">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                    <span class="glyphicon glyphicon-move"></span>
+                                    <span class="glyphicon glyphicon-refresh"></span>
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                    <span class="glyphicon glyphicon-resize-full"></span>
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </div>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Status</th>
+                                        <th>Clients</th>
+                                        <th>Orders#</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-primary">Pald</button>
+                                            <button class="btn btn-success">Active</button>
+                                        </td>
+                                        <td>John Doe</td>
+                                        <td>3435362</td>
+                                        <td>Today 8:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-primary">Pald</button>
+                                            <button class="btn btn-success">Active</button>
+                                        </td>
+                                        <td>Thomas Bayer</td>
+                                        <td>3435362</td>
+                                        <td>Today 16:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-primary">Pald</button>
+                                            <button class="btn btn-secondary">Active</button>
+                                        </td>
+                                        <td>Nicolas Karabat</td>
+                                        <td>3435362</td>
+                                        <td>Yestarday</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-secondary">Pald</button>
+                                            <button class="btn btn-secondary">Active</button>
+                                        </td>
+                                        <td>Alexandre</td>
+                                        <td>3435362</td>
+                                        <td>23th May</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="pull-left" style="font-weight: bold;">Recent tickets</div>
+                                <div class="pull-right">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                    <span class="glyphicon glyphicon-move"></span>
+                                    <span class="glyphicon glyphicon-refresh"></span>
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                    <span class="glyphicon glyphicon-resize-full"></span>
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </div>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Status</th>
+                                        <th>Subject</th>
+                                        <th>Department</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-success">Open</button>
+                                        </td>
+                                        <td>Website down for one week</td>
+                                        <td>Support</td>
+                                        <td>Today 8:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-success">Open</button>
+                                        </td>
+                                        <td>Restoring default settings</td>
+                                        <td>Support</td>
+                                        <td>Today 16:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-warning">Progress</button>
+                                        </td>
+                                        <td>Loosing control on server</td>
+                                        <td>Support</td>
+                                        <td>Yestarday</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-danger">Closed</button>
+                                        </td>
+                                        <td>Authorizations keys</td>
+                                        <td>Support</td>
+                                        <td>23th May</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="pull-left" style="font-weight: bold;">
+                                        Comments
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                        <span class="glyphicon glyphicon-move"></span>
+                                        <span class="glyphicon glyphicon-refresh"></span>
+                                        <span class="glyphicon glyphicon-minus"></span>
+                                        <span class="glyphicon glyphicon-resize-full"></span>
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="pull-left" style="font-weight: bold;">
+                                    <img src="user.jpg" alt="user" class="img-circle"
+                                        style="width: 50px; height: 40px;"> Matt McGill
+                                </div>
+                                <div class="pull-right">
+                                    Today 12:45
+                                </div>
+                                <br><br><br>
+                                <div class="pull-left">
+                                    <p style="height: 100px; text-align: left;">
+                                        That's a great idea! I'm sure we could start this project as soon as possible.
+                                        <br>
+                                        Let's meet tomorow!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="pull-left" style="font-weight: bold;">
+                                        Contacts
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                        <span class="glyphicon glyphicon-move"></span>
+                                        <span class="glyphicon glyphicon-refresh"></span>
+                                        <span class="glyphicon glyphicon-minus"></span>
+                                        <span class="glyphicon glyphicon-resize-full"></span>
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="pull-left" style="font-weight: bold;">
+                                    <img src="user.jpg" alt="user" class="img-circle"
+                                        style="width: 50px; height: 40px;"> Tim Collins <br>
+                                    timcolins@mail.com
+                                </div>
+                                <div class="pull-right">
+                                    Director at Tony's
+                                </div>
+                                <br><br><br>
+                                <hr>
+                                <div class="clearfix"></div>
+                                <div class="pull-left" style="font-weight: bold;">
+                                    <img src="user.jpg" alt="user" class="img-circle"
+                                        style="width: 50px; height: 40px;"> Maggy Smith <br>
+                                    <p>maggysmith@gmail.com</p>
+                                </div>
+                                <div class="pull-right">
+                                    PR Manager
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
